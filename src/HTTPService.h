@@ -28,14 +28,7 @@
 #define _HTTP_SERVICE_H_
 
 #include <Arduino.h>
-#if defined(ESP8266)
-# include <WiFiClientSecureBearSSL.h>
-# include <ESP8266HTTPClient.h>
-#elif defined(ESP32)
-# include <HTTPClient.h>
-#else
-# error "This library currently supports only ESP8266 and ESP32."
-#endif
+#include <HTTPClient.h>
 #include "Options.h"
 
 
